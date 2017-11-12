@@ -2,7 +2,9 @@ package pe.edu.tecsup.springmvc.controller.showcases;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import pe.edu.tecsup.springmvc.model.Persona;
 
 @Controller
@@ -10,8 +12,10 @@ import pe.edu.tecsup.springmvc.model.Persona;
 public class DataController {
 
     @RequestMapping("query")
-    public String query(String nombres, Model model) {
+    public String query(String nombres, String apellidos, Model model) {
         model.addAttribute("nombres", nombres);
+        model.addAttribute("apellidos", apellidos);
+
         return "data/query";
     }
 
@@ -22,7 +26,7 @@ public class DataController {
     }
 
     @RequestMapping("path/{elemento}")
-    public String path(String elemento, Model model) {
+    public String path(@PathVariable String elemento, Model model) {
         model.addAttribute("elemento", elemento);
         return "data/path";
     }

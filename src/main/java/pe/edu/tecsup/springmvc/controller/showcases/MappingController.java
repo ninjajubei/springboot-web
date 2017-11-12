@@ -27,13 +27,14 @@ public class MappingController {
 
     @GetMapping("parametro")
     public String parametro(String nombre, Model model) {
+        
         model.addAttribute("nombre", nombre);
-
         return "mapping/parametro";
     }
 
     @GetMapping("rest/{elemento}")
     public String rest(@PathVariable String elemento, Model model) {
+       
         model.addAttribute("elemento", elemento);
         return "mapping/rest";
     }

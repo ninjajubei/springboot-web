@@ -20,7 +20,7 @@ public class BasicoController {
         return "basico/holaMundo";
     }
 
-    @GetMapping("adiosmundo")
+    @GetMapping(value = {"adiosmundo", "goodbye"})
     public String adiosMundo() {
         return "basico/adiosMundo";
     }

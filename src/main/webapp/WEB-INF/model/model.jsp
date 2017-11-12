@@ -9,5 +9,7 @@
         <h1>Model -  ${titulo} </h1>
 
         <p> ${mensaje} </p>
+        
+        <p> ${mensajeEspecial} </p>
     </body>
 </html>

@@ -5,7 +5,7 @@
         
         <ul class="list-group">
             <li class="list-group-item">
-                <a href="/admin/programa" target="_blank"> CRUD de Programa </a>
+                <a href="/admin/curso" target="_blank"> CRUD de Programa </a>
             </li>
         </ul>
     </div>

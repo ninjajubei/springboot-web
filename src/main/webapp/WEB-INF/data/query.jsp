@@ -8,6 +8,6 @@
     <body>
         <h1>Data - Parámetro Query </h1>
         
-        <p> Nombres: <strong>${nombres} </strong></p>
+        <p> Nombres: <strong>${nombres} ${apellidos} </strong></p>
     </body>
 </html>

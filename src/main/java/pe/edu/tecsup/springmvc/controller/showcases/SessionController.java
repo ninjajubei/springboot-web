@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SessionController {
 
     @RequestMapping("basico")
-    public String basico(String mensaje, HttpSession session) {
+    public String basico(String mensaje, HttpSession session) { 
         session.setAttribute("MENSAJE", mensaje);
         return "session/basico";
     }

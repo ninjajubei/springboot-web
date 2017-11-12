@@ -23,6 +23,8 @@
                 <form action="/data/post" method="POST" target="_blank">
                     <input type="text" value="Tony" name="nombres"/>
                     <input type="text" value="Stark" name="apellidos"/>
+                    <input type="text" value="M" name="sexo"/>
+                    <input type="text" name="edad"/>
                     <input type="submit" value="Enviar" />
                 </form>
             </li>
