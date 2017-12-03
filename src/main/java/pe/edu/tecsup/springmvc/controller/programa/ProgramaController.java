@@ -40,7 +40,7 @@ public class ProgramaController {
         
     }
     
-    @RequestMapping("Nuevo")
+    @RequestMapping("nuevo")
     public String nuevo(Model model){
         
         model.addAttribute("programa", new Programa());
@@ -56,7 +56,7 @@ public class ProgramaController {
         }
         
         model.addAttribute("programa",programa);
-        return "admin/curso/formulario";
+        return "admin/programa/formulario";
     }
     
     @RequestMapping("save")
